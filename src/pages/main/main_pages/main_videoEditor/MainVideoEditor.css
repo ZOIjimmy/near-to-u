@@ -1,0 +1,124 @@
+.theme-light {
+	/*base color*/
+	--color-primary: #ebf0f6;
+	--color-secondary: #98ccd3;
+	--color-accent: #364e68;
+	--color-highlight: #132238;
+	/* additional color */
+	--font-color: #132238;
+	--shadow1: rgba(0, 0, 0, 0.25);
+	--shadow2: rgba(0, 0, 0, 0.22);
+}
+.theme-dark {
+	/*base color*/
+	--color-primary: #132238;
+	--color-secondary: #364e68;
+	--color-accent: #98ccd3;
+	--color-highlight: #ebf0f6;
+	/* additional color */
+	--font-color: #ebf0f6;
+	--shadow1: rgba(72, 100, 104, 0.25);
+	--shadow2: rgba(72, 100, 104, 0.22);
+}
+
+.theme-dark {
+    background-color: var(--color-primary);
+    font-family: "Montserrat", sans-serif;
+  height: 100%;
+  color:var(--color-highlight);
+}
+
+.theme-light {
+	background-color: var(--color-primary);
+	font-family: "Montserrat", sans-serif;
+  height: 100%;
+  color:var(--color-highlight);
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-center-v {
+	background-color: var(--color-secondary);
+	position: absolute;
+	left: 10%;
+	right: 46%;
+	top: 15%;
+	width: 50%;
+	height: 100%;
+	margin: 0px;
+	padding: 50px;
+}
+.main-right-v {
+  background-color: var(--color-secondary);
+  position: absolute;
+	right: 5%;
+	top: 15%;
+	width: 30%;
+  height: 100%;
+	margin: 0px;
+	padding: 50px;
+}
+
+button {
+  border-radius: 0px;
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary) !important;
+  padding: 5px 10px;
+}
+
+#convertBtn:hover {
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-highlight) !important;
+  padding: 5px 10px;
+}
+
+#convertBtn:disabled,
+#convertBtn[disabled]{
+  border: 0px solid var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-highlight);
+}
+
+h1, h2, h3, h4, h5, h6{
+  color:var(--color-highlight) !important;
+}

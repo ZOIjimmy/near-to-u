@@ -1,0 +1,37 @@
+
+.theme-light {
+	/*base color*/
+	--color-primary: #ebf0f6;
+	--color-secondary: #98ccd3;
+	--color-accent: #364e68;
+	--color-highlight: #132238;
+	/* additional color */
+	--font-color: #132238;
+	--shadow1: rgba(0, 0, 0, 0.25);
+	--shadow2: rgba(0, 0, 0, 0.22);
+}
+.theme-dark {
+	 /*base color*/
+	--color-primary: #132238;
+	--color-secondary: #364e68;
+	--color-accent: #98ccd3;
+	--color-highlight: #ebf0f6;
+	/* additional color */
+	--font-color: #ebf0f6;
+	--shadow1: rgba(72, 100, 104, 0.25);
+	--shadow2: rgba(72, 100, 104, 0.22);
+}
+
+.theme-dark{
+    background-color: var(--color-primary);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.theme-light{
+    background-color: var(--color-primary);
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    background-color: violet;
+}

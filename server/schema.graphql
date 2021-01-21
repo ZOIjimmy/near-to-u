@@ -1,0 +1,107 @@
+type Query {
+	login(account: String!, password: String!): String!
+	getPosts(locale: LocationInput!): [Post]!
+	getPostFromId(id: String!): Post
+	search(text: String, type: Int!, limit: Int!): [Post]!
+	getProfile(account: String!): User
+}
+
+type Mutation {
+	signup(data: UserInput!): String!
+	editProfile(data: UserInput!): String!
+	createPost(data: PostInput!): String!
+	deletePost(id: String!): String!
+	like(id: String!, user: String!): String!
+	unlike(id: String!, user: String!): String!
+	comment(id: String!, user: String!, text: String!): String!
+	deleteComment(id: String!, user: String!, text: String!): String!
+}
+
+type Subscription {
+	newSub: Post!
+	postSub(id: String): PostSubPayload!
+}
+
+input UserInput {
+	account: String!
+	password: String
+	email: String
+	name: String
+	picture: String
+	age: Int
+	phone: String
+	address: String
+	introduction: String
+}
+
+input PostInput {
+	author: String!
+	location: LocationInput!
+	title: String!
+	type: String!
+	text: String
+	picture: String
+	video: String
+	tags: [String]
+	time: String!
+}
+
+input LocationInput {
+	x: Float
+	y: Float
+	s: Float
+}
+
+type User {
+	usertype: String!
+	name: String!
+	account: String!
+	email: String!
+	password: String!
+	picture: String
+	age: Int
+	phone: String
+	address: String
+	introduction: String
+	lastappear: Location
+}
+
+type Post {
+	id:	String!
+	author: String!
+	location: Location!
+	type: String!
+	title: String!
+	text: String
+	picture: String
+	video: String
+	tags: [String]
+	likes: [String]!
+	comments: [Comment]!
+	time: String
+}
+
+type Comment {
+	user: String!
+	text: String!
+}
+
+type Location {
+	x: Float
+	y: Float
+	s: Float
+}
+
+type PostSubPayload {
+	mutation: MutationType!
+	id: String!
+	data: Comment
+}
+
+enum MutationType {
+	LIKED
+	UNLIKED
+	COMMENTADDED
+	COMMENTDELETED
+	DELETED
+}

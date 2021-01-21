@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+.theme-light {
+	/*base color*/
+	--color-primary: #ebf0f6;
+	--color-secondary: #98ccd3;
+	--color-accent: #364e68;
+	--color-highlight: #132238;
+	/* additional color */
+	--font-color: #132238;
+	--shadow1: rgba(0, 0, 0, 0.25);
+	--shadow2: rgba(0, 0, 0, 0.22);
+}
+.theme-dark {
+	 /*base color*/
+	--color-primary: #132238;
+	--color-secondary: #364e68;
+	--color-accent: #98ccd3;
+	--color-highlight: #ebf0f6;
+	/* additional color */
+	--font-color: #ebf0f6;
+	--shadow1: rgba(72, 100, 104, 0.25);
+	--shadow2: rgba(72, 100, 104, 0.22);
+}
+
+.theme-dark{
+    background-color: var(--color-primary);
+    height: 110vh !important;
+    font-family: 'Montserrat', sans-serif;
+    color: black !important;
+}
+
+.theme-light{
+    background-color: var(--color-primary);
+    height: 110vh !important;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-color) !important;
+}
+
+
+.main {
+    background-color: var(--color-primary);
+    height: 100%;
+}
+
+.main-left {
+    background-color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    right: 15%;
+    width: 15%;
+}
+.main-center {
+    position: absolute;
+    left: 6% !important;
+    top: 10% !important;
+    width: 50%;
+    height:75%;
+}
+.main-right {
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 8%;
+    right: 7%;
+    width: 40%;
+    max-height: 150vh;
+    overflow: scroll !important;
+}
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }

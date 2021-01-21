@@ -1,0 +1,73 @@
+.theme-light {
+	/*base color*/
+	--color-primary: #ebf0f6;
+	--color-secondary: #98ccd3;
+	--color-accent: #364e68;
+	--color-highlight: #132238;
+	/* additional color */
+	--font-color: #132238;
+	--shadow1: rgba(0, 0, 0, 0.25);
+	--shadow2: rgba(0, 0, 0, 0.22);
+}
+.theme-dark {
+	/*base color*/
+	--color-primary: #132238;
+	--color-secondary: #364e68;
+	--color-accent: #98ccd3;
+	--color-highlight: #ebf0f6;
+	/* additional color */
+	--font-color: #ebf0f6;
+	--shadow1: rgba(72, 100, 104, 0.25);
+	--shadow2: rgba(72, 100, 104, 0.22);
+}
+
+.input {
+    display: none;
+}
+#button {
+    color: var(--color-highlight) !important;
+}
+.nav{
+    position: relative;
+}
+.main-div-profile {
+    position:  relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    left: 60px;
+    top: -100px;
+    padding: 20px;
+    height: 120vh !important;
+    max-height: 130vh !important;
+}
+.profile_img {
+    border-radius: 10px;
+    background-color: var(--color-highlight);
+    height: 230px;
+    padding: 25px;
+    padding-right: 200px;
+}
+.profile_pic {
+    border-radius: 10px;
+    background-color: white;
+    border: 5px black solid;
+    border-style:ridge;
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.change_photo{
+    float: left;
+    top: 150px;
+    left: -50px;
+}
+.change_cover{
+    background-color: rgb(228, 225, 225);
+    width: 140px;
+    float: right;
+    border-radius:10px
+}
+.profile{
+    left:50px;
+    padding: 20px;
+}

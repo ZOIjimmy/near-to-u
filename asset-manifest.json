@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/near-to-u/static/css/main.da2060bd.chunk.css",
+    "main.js": "/near-to-u/static/js/main.81f8e738.chunk.js",
+    "main.js.map": "/near-to-u/static/js/main.81f8e738.chunk.js.map",
+    "runtime-main.js": "/near-to-u/static/js/runtime-main.888ac363.js",
+    "runtime-main.js.map": "/near-to-u/static/js/runtime-main.888ac363.js.map",
+    "static/css/2.fc90330b.chunk.css": "/near-to-u/static/css/2.fc90330b.chunk.css",
+    "static/js/2.4bee41a0.chunk.js": "/near-to-u/static/js/2.4bee41a0.chunk.js",
+    "static/js/2.4bee41a0.chunk.js.map": "/near-to-u/static/js/2.4bee41a0.chunk.js.map",
+    "static/js/3.22adb752.chunk.js": "/near-to-u/static/js/3.22adb752.chunk.js",
+    "static/js/3.22adb752.chunk.js.map": "/near-to-u/static/js/3.22adb752.chunk.js.map",
+    "index.html": "/near-to-u/index.html",
+    "static/css/2.fc90330b.chunk.css.map": "/near-to-u/static/css/2.fc90330b.chunk.css.map",
+    "static/css/main.da2060bd.chunk.css.map": "/near-to-u/static/css/main.da2060bd.chunk.css.map",
+    "static/js/2.4bee41a0.chunk.js.LICENSE.txt": "/near-to-u/static/js/2.4bee41a0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.888ac363.js",
+    "static/css/2.fc90330b.chunk.css",
+    "static/js/2.4bee41a0.chunk.js",
+    "static/css/main.da2060bd.chunk.css",
+    "static/js/main.81f8e738.chunk.js"
+  ]
+}
